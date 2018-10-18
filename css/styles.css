@@ -10,12 +10,12 @@ body {
 .counter {
     display: table-cell;
     text-align: center;
-    margin:2.5%;
+    margin:2.0%;
     font-size:60px;
     background-color: grey;
     width:150px;
     border-radius: 50%;
-    height:150px;
+    height:145px;
     vertical-align: middle;
-    padding-top: 3.5%;
+    padding-top: 3.4%;
   }

@@ -27,3 +27,8 @@ var x = setInterval(function() {
     document.getElementById("hours").innerHTML = hours + "h";
     document.getElementById("days").innerHTML = days + "d";
 }, 1000);
+
+document.getElementById("btn").addEventListener("click", function(){
+    countDownDate = new Date();
+    localStorage.setItem('startDate', countDownDate);
+});
