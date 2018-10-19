@@ -1,3 +1,4 @@
+
 var countDownDate = localStorage.getItem('startDate');
 if (countDownDate) {
     countDownDate = new Date(countDownDate);
@@ -5,7 +6,7 @@ if (countDownDate) {
     countDownDate = new Date();
     localStorage.setItem('startDate', countDownDate);
 }
-
+  
 // Update the count down every 1 second
 var x = setInterval(function() {
 
@@ -28,6 +29,7 @@ var x = setInterval(function() {
     document.getElementById("days").innerHTML = days + "d";
 }, 1000);
 
+// Reset button to reset the timer
 document.getElementById("btn").addEventListener("click", function(){
     countDownDate = new Date();
     localStorage.setItem('startDate', countDownDate);

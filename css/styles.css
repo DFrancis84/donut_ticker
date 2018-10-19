@@ -1,11 +1,22 @@
 body {
     background: url('../img/donuts.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .title {
     background: url('../img/sprinkles.jpg');
     background-size: auto;
+}
+
+.title1 {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.title2 {
+    font-weight: bold;
+    font-size: 2rem;
 }
 .counter {
     display: table-cell;
