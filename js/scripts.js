@@ -73,6 +73,10 @@ document.getElementById("btn").addEventListener("click", function(){
   
     var angle = 0;
   
+    const sleep = (milliseconds) => {
+      return new Promise(resolve => setTimeout(resolve, milliseconds))
+    }
+
     function update() {
       angle += 0.01;
       for (var i = 0; i < mp; i++) {
@@ -95,4 +99,7 @@ document.getElementById("btn").addEventListener("click", function(){
       }
     }
     setInterval(draw, 20);
+    sleep(5000).then(() => {
+      location.reload();
+    })
 });
